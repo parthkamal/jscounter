@@ -5,7 +5,7 @@ const resultCounter = document.getElementById('result-counter');
 
 //state of the app
 const state = {
-    count:1
+    count:0
 };
 
 
@@ -13,6 +13,8 @@ const state = {
 const renderResult = () =>{
     resultCounter.innerHTML = state.count
 }
+
+renderResult();
 
 //on click listener with helper methods
 increaseButton.addEventListener("click", ()=>{
